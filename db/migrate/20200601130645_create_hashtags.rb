@@ -1,4 +1,4 @@
-class CreateHashtags < ActiveRecord::Migration[6.0]
+class CreateHashtags < ActiveRecord::Migration[5.2]
   def change
     create_table :hashtags do |t|
       t.string :name
