@@ -5,8 +5,7 @@ module FaqModule
       @answer = params["answer"]
       @hashtags = params["hashtags"]
     end
- 
- 
+
     def call
       return 'Hashtag Obrigatória' if @hashtags == nil
       Faq.transaction do
